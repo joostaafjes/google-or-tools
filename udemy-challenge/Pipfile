@@ -7,6 +7,9 @@ verify_ssl = true
 
 [packages]
 ortools = "*"
+numpy = "*"
+scipy = "*"
+plotly = "*"
 
 [requires]
 python_version = "3.8"
