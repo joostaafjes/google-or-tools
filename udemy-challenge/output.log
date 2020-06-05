@@ -1,0 +1,28 @@
+Route for vehicle 0:
+ 0 Load(0) ->  24 Load(24) ->  27 Load(44) ->  0 Load(44)
+Distance of the route: 58m
+Load of the route: 44
+
+Route for vehicle 1:
+ 0 Load(0) ->  3 Load(6) ->  2 Load(27) ->  23 Load(35) ->  28 Load(50) ->  4 Load(69) ->  11 Load(83) ->  8 Load(89) ->  18 Load(90) ->  14 Load(93) ->  0 Load(93)
+Distance of the route: 226m
+Load of the route: 93
+
+Route for vehicle 2:
+ 0 Load(0) ->  26 Load(2) ->  13 Load(18) ->  21 Load(30) ->  31 Load(39) ->  19 Load(63) ->  17 Load(82) ->  6 Load(94) ->  0 Load(94)
+Distance of the route: 178m
+Load of the route: 94
+
+Route for vehicle 3:
+ 0 Load(0) ->  29 Load(2) ->  22 Load(6) ->  9 Load(22) ->  15 Load(44) ->  10 Load(52) ->  25 Load(76) ->  5 Load(83) ->  20 Load(91) ->  0 Load(91)
+Distance of the route: 234m
+Load of the route: 91
+
+Route for vehicle 4:
+ 0 Load(0) ->  12 Load(21) ->  1 Load(40) ->  7 Load(56) ->  16 Load(74) ->  30 Load(88) ->  0 Load(88)
+Distance of the route: 86m
+Load of the route: 88
+
+Total distance of all routes: 782m
+Total load of all routes: 410
+0.7613327170000002 seconds

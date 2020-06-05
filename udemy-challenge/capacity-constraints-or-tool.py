@@ -66,29 +66,19 @@ def plot_solution(data, manager, routing, solution, X_Coordinations, Y_Coordinat
     fig = go.Figure()
     for vehicle_id in range(data['num_vehicles']):
         index = routing.Start(vehicle_id)
-        plan_output = 'Route for vehicle {}:\n'.format(vehicle_id)
-        route_distance = 0
-        route_load = 0
         x = []
         y = []
         while not routing.IsEnd(index):
             node_index = manager.IndexToNode(index)
             x.append(X_Coordinations[node_index])
             y.append(Y_Coordinations[node_index])
-            route_load += data['demands'][node_index]
-            plan_output += ' {0} Load({1}) -> '.format(node_index, route_load)
-            previous_index = index
             index = solution.Value(routing.NextVar(index))
-            # x.append(X_Coordinations[index])
-            # y.append(Y_Coordinations[index])
-            route_distance += routing.GetArcCostForVehicle(
-                previous_index, index, vehicle_id)
         node_index = manager.IndexToNode(index)
         x.append(X_Coordinations[node_index])
         y.append(Y_Coordinations[node_index])
         fig.add_trace(go.Scatter(x=x, y=y,
                                  mode='lines+markers',
-                                 name=f'route for {vehicle_id}'))
+                                 name=f'route for vehicle {vehicle_id}'))
 
     fig.show()
 
