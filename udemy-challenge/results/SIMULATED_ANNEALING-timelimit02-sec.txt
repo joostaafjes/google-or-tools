@@ -1,0 +1,3 @@
+Total distance of all routes: 782m
+Total load of all routes: 410
+Total time 2.002695849 sec
